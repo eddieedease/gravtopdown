@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://f2n68aao68aa"]
+
+[ext_resource type="Script" path="res://scripts/dialogue_box.gd" id="1_script"]
+
+[node name="DialogueBox" type="CanvasLayer"]
+layer = 100
+visible = false
+script = ExtResource("1_script")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/line_spacing = 4
+text = "Dialogue Text Goes Here..."
+autowrap_mode = 2

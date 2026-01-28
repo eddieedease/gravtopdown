@@ -1,0 +1,12 @@
+{
+	"npc_guide": [
+		"Welcome to the start of your adventure!",
+		"This is a test of the dialogue system.",
+		"You can press Space to advance the text.",
+		"Good luck!"
+	],
+	"npc_villager_1": [
+		"It's a nice day for a walk.",
+		"I heard there are wild creatures in the tall grass."
+	]
+}
