@@ -9,10 +9,10 @@ size = Vector2(32, 32)
 [node name="World" type="Node2D" unique_id=1390735189]
 
 [node name="Background" type="ColorRect" parent="." unique_id=268913349]
-offset_left = -500.0
-offset_top = -500.0
-offset_right = 500.0
-offset_bottom = 500.0
+offset_left = -434.0
+offset_top = -472.0
+offset_right = 566.0
+offset_bottom = 528.0
 color = Color(0.247059, 0.611765, 0.282353, 1)
 
 [node name="Player" parent="." unique_id=56492068 instance=ExtResource("1_mnksr")]

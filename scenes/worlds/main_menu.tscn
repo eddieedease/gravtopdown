@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://e1m5678n5678"]
 
-[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_script"]
+[ext_resource type="Script" uid="uid://ducndo2ooocuw" path="res://scripts/main_menu.gd" id="1_script"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=734503570]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -11,7 +11,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_script")
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1459092582]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -20,7 +20,7 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.2, 0.2, 0.4, 1)
 
-[node name="TitleLabel" type="Label" parent="."]
+[node name="TitleLabel" type="Label" parent="." unique_id=617160197]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -33,7 +33,7 @@ grow_horizontal = 2
 text = "Pokemon Clone"
 horizontal_alignment = 1
 
-[node name="StartButton" type="Button" parent="."]
+[node name="StartButton" type="Button" parent="." unique_id=879352264]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
