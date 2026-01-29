@@ -9,7 +9,7 @@ var current_dialogue_lines = []
 var current_line_index = 0
 var is_dialogue_active = false
 
-var dialogue_ui_scene = preload("res://scenes/dialogue_box.tscn")
+var dialogue_ui_scene = preload("res://scenes/helpers/dialogue_box.tscn")
 var dialogue_ui_instance = null
 
 func _ready():

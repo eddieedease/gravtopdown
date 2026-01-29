@@ -1,6 +1,6 @@
 extends StaticBody2D
 
-@export var npc_id: String = "npc_guide"
+@export var npc_id: String
 
 func interact():
 	print("Interacting with NPC: ", npc_id)

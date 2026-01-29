@@ -23,10 +23,10 @@ You can use Adobe Illustrator, Figma, or Inkscape, but you must be careful with 
 1.  Design your character/object in Illustrator.
 2.  **Export Size**: Export as a PNG where the asset height corresponds to its in-game size (e.g., export the character to be **16px to 32px tall**).
 3.  **Do NOT** export a 1000px high-res image and shrink it in Godot.
-    *   *Why?* Godot will downscale it to fit the 180px high screen, making it look blurry or pixelated in a messy way.
+	*   *Why?* Godot will downscale it to fit the 180px high screen, making it look blurry or pixelated in a messy way.
 4.  **Anti-aliasing**:
-    *   If you want a "clean vector" look: Export with anti-aliasing ON. It will look like a smooth, tiny sprite.
-    *   If you want a "pixel" look: Turn anti-aliasing OFF during export.
+	*   If you want a "clean vector" look: Export with anti-aliasing ON. It will look like a smooth, tiny sprite.
+	*   If you want a "pixel" look: Turn anti-aliasing OFF during export.
 
 ## 📥 Godot Import Settings
 
@@ -58,10 +58,10 @@ Yes! **Sprite Sheets** are the standard way to handle animations in Godot.
 Aseprite is perfect for this.
 1.  **Create your animation** on the timeline (e.g., Frames 1-4 are Walk Down, Frames 5-8 are Walk Up).
 2.  **Exporting**:
-    *   Go to `File > Export Sprite Sheet`.
-    *   **Layout**: `Packed` or `By Rows`.
-    *   **Sheet Type**: `Horizontal Strip` (all frames in one long row) OR `Grid` (Rows = Directions, Columns = Animation Frames).
-    *   **Trim**: OFF (Keep purely grid-based to make setup easier in Godot).
+	*   Go to `File > Export Sprite Sheet`.
+	*   **Layout**: `Packed` or `By Rows`.
+	*   **Sheet Type**: `Horizontal Strip` (all frames in one long row) OR `Grid` (Rows = Directions, Columns = Animation Frames).
+	*   **Trim**: OFF (Keep purely grid-based to make setup easier in Godot).
 
 ### Recommended Layout (4-Direction Walk)
 For a top-down character, a common standard is:
@@ -78,4 +78,3 @@ You will use a `Sprite2D` node.
 3.  Set **Hframes**: Number of columns (horizontal frames).
 4.  Set **Vframes**: Number of rows (vertical frames).
 5.  Changing the **Frame** property will now cycle through your animations!
-

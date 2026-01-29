@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://dak3456l3456"]
+
+[ext_resource type="PackedScene" uid="uid://b8j2345k2345" path="res://scenes/characters/player.tscn" id="1_mnksr"]
+[ext_resource type="PackedScene" uid="uid://g3o8aa0p8aa0" path="res://scenes/characters/npc.tscn" id="2_sqeqr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(32, 32)
+
+[node name="World" type="Node2D" unique_id=1390735189]
+
+[node name="Background" type="ColorRect" parent="." unique_id=268913349]
+offset_left = -500.0
+offset_top = -500.0
+offset_right = 500.0
+offset_bottom = 500.0
+color = Color(0.247059, 0.611765, 0.282353, 1)
+
+[node name="Player" parent="." unique_id=56492068 instance=ExtResource("1_mnksr")]
+position = Vector2(160, 90)
+
+[node name="Camera2D" type="Camera2D" parent="Player" unique_id=1933930834]
+process_callback = 0
+
+[node name="Building1" type="StaticBody2D" parent="." unique_id=294960252]
+position = Vector2(80, 50)
+
+[node name="ColorRect" type="ColorRect" parent="Building1" unique_id=496063271]
+offset_right = 32.0
+offset_bottom = 32.0
+color = Color(0.643137, 0.286275, 0.286275, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Building1" unique_id=808157588]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Building2" type="StaticBody2D" parent="." unique_id=1940962790]
+position = Vector2(240, 130)
+
+[node name="ColorRect" type="ColorRect" parent="Building2" unique_id=709935885]
+offset_right = 32.0
+offset_bottom = 32.0
+color = Color(0.643137, 0.286275, 0.286275, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Building2" unique_id=757996265]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="NPC_Guide" parent="." unique_id=1393625726 instance=ExtResource("2_sqeqr")]
+position = Vector2(112, 115)
+npc_id = "npc_guide"
+
+[node name="NPC_villager_1" parent="." unique_id=902174436 instance=ExtResource("2_sqeqr")]
+position = Vector2(157, 135)
+npc_id = "npc_villager_1"

@@ -1,6 +1,6 @@
 extends Control
 
-const TARGET_SCENE_PATH = "res://scenes/world.tscn"
+const TARGET_SCENE_PATH = "res://scenes/worlds/world.tscn"
 
 @onready var progress_bar = $ProgressBar
 @onready var status_label = $StatusLabel
