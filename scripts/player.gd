@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const SPEED = 100.0
+const SPEED = 600.0
 
 @onready var ray_cast = $RayCast2D
 
@@ -40,16 +40,16 @@ func _physics_process(_delta):
 		# We normalize it to snap to 4 directions if we want cleaner raycasts, 
 		# or just use the vector. For 4-way visual, snapping is better.
 		if abs(input_vector.x) > abs(input_vector.y):
-			ray_cast.target_position = Vector2(input_vector.x, 0).normalized() * 40 # Increased length
+			ray_cast.target_position = Vector2(input_vector.x, 0).normalized() * 240 # Scaled for 1920x1080
 		else:
-			ray_cast.target_position = Vector2(0, input_vector.y).normalized() * 40
+			ray_cast.target_position = Vector2(0, input_vector.y).normalized() * 240
 	else:
 		velocity = Vector2.ZERO
 		
 		# Ensure RayCast stays facing the last direction
 		if abs(last_direction.x) > abs(last_direction.y):
-			ray_cast.target_position = Vector2(last_direction.x, 0).normalized() * 40
+			ray_cast.target_position = Vector2(last_direction.x, 0).normalized() * 240
 		else:
-			ray_cast.target_position = Vector2(0, last_direction.y).normalized() * 40
+			ray_cast.target_position = Vector2(0, last_direction.y).normalized() * 240
 
 	move_and_slide()
